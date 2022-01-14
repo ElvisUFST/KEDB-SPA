@@ -38,11 +38,7 @@ import { authProvider } from '../authProvider'
 function App() {
   return (
       <Router>
-        <AzureAD provider={authProvider} forceLogin>
-          {({ login, authenticationState, error, accountInfo }) => {
-            switch (authenticationState) {
-              case AuthenticationState.Authenticated:
-                return (
+
                   <>
                   <div>
                   <CssBaseline />
@@ -83,7 +79,7 @@ function App() {
                             <Route
                               path='/afrapporter/:kontrolrapportId'
                               exact
-                              render={(props) => <Afrapporter currentUser={accountInfo.account} {...props} />}
+                              render={(props) => <Afrapporter currentUser='Elvis' {...props} />}
                             />
                             <Route
                               path='/superbruger/toldrapportTransportmidler'
@@ -177,27 +173,7 @@ function App() {
                     </div>
                   </>
                 )
-              case AuthenticationState.Unauthenticated:
-                return (
-                  <div>
-                    {error && (
-                      <p>
-                        <span>Log ind mislykkedes. Prøv igen.</span>
-                      </p>
-                    )}
-                    <p>
-                      <span>Du er ikke logget ind</span>
-                      <button type='button' onClick={login}>Log ind</button>
-                    </p>
-                  </div>
-                )
-              case AuthenticationState.InProgress:
-                return <p>Authenticating...</p>
 
-              default:
-            }
-          }}
-        </AzureAD>
       </Router>
   )
 }

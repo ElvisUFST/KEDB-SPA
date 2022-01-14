@@ -27,13 +27,11 @@ const reducer = (state, action) => {
         let updatedState = action.payload
   
         if (!action.payload.sagsbehandler) {
-          updatedState.sagsbehandler = {
-            id: action.currentUser.idToken.oid,
-            name: action.currentUser.name
-          }
+          updatedState.sagsbehandler = null
         }
 
         return { ...state, ...updatedState }
+
       }
       break
     }
@@ -198,7 +196,10 @@ const Afrapporter = ({ currentUser }) => {
 
           return res.data
         })
-        .catch((error) => alert('Something went wrong during afrapportering!\n' + error))
+        .catch((error) => {
+          alert('Something went wrong during afrapportering!\n' + error)}
+        )
+
     }
 
     if (!state.workzoneJournalnummer) {

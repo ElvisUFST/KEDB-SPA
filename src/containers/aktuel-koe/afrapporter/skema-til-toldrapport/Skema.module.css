@@ -1,0 +1,18 @@
+.skema-root {
+  overflow: 'hidden' !important;
+}
+
+.firstGrid {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  margin-left: 1px !important;
+  margin-right: 1px !important;
+}
+
+.secondGrid {
+  background: #f1f1f1 !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  margin-left: 1px !important;
+  margin-right: 1px !important;
+}

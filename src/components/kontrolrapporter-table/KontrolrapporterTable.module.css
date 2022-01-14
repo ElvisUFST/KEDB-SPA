@@ -1,0 +1,25 @@
+.space-between-vis-kontrolrapport-and-afrapporter {
+  margin-right: 10px !important;
+}
+
+.button {
+  background-color: #14143c !important;
+  color: #ffffff !important;
+  text-transform: capitalize !important;
+}
+
+.textContainer {
+  white-space: pre-line !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.head {
+  background-color: #14143c !important;
+  text-align:left !important;
+  color: #ffffff !important;
+}
+
+.cell {
+  text-align:left !important;
+}

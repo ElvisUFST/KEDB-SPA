@@ -1,0 +1,64 @@
+.Paper {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+  width: fit-content !important;
+  outline: auto !important;
+  margin-bottom: 50px !important;
+  align-items: center !important;
+  align-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.tableHeader {
+  background-color: #14143c !important;
+  color: #ffffff !important;
+}
+
+.root {
+  background-color: #14143c;
+  color: white;
+  font-size: 10px;
+}
+
+.kontrollist {
+  width: 50% !important;
+  display: table !important;
+  align-items: center !important;
+  align-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: left !important;
+}
+
+.buttonYellow {
+  background-color: #ffbb16 !important;
+  text-transform: none !important;
+}
+
+.buttonYellowAbsolute {
+  background-color: #ffbb16 !important;
+  position: absolute !important;
+}
+
+.buttonBlue {
+  background-color: #14143c !important;
+  color: #ffffff !important;
+  text-transform: none !important;
+}
+
+.btnDialogLuk {
+  background-color: #ffbb16 !important;
+  margin-top: -15px !important;
+  margin-right: 15px !important;
+}
+
+.btnTilfoej {
+  background-color: #ffbb16 !important;
+}
+
+.tableBodyRediger {
+  text-align: right !important;
+}

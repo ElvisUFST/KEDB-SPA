@@ -1,0 +1,14 @@
+.head {
+  max-width: 300px;
+  min-width: 300px;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #14143c !important;
+  color: #ffffff !important;
+}
+
+.cell {
+  white-space: pre-line !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
